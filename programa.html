@@ -6,10 +6,7 @@
         document.write("<br>");
         document.write("<br>");
     }
-    function imprimir(frase){
-        document.write(frase);
-        saltarLinea();
-    }
+    //#region 
     document.write("la edad de cristian es...")
     document.write("<br>")
     document.write(25+8)
@@ -61,19 +58,19 @@
     document.write("<br>");
     document.write("<br>");
     document.write("<br>");
+    //#endregion
 
     anho=2022
-    imprimir("hola a todos")
+    var saltoLinea="<br><br><br>";
+    document.write("Jimena tiene: "+ (anho-2010) + " años");
+    saltarLinea;
+
+
+    document.write("Paola tiene: "+ (anho-1995) + " años");
     saltarLinea();
-    imprimir("Jimena tiene: "+ (anho-2010) + " años");
-    
 
-
-    imprimir("Paola tiene: "+ (anho-1995) + " años");
-    
-
-    imprimir("Laura tiene: "+ (anho-2005) + " años");
-    
+    document.write("Laura tiene: "+ (anho-2005) + " años");
+    saltarLinea();
 
     var edadJimena=12;
     var edadPaola=27;
