@@ -1,6 +1,11 @@
 <meta charset="UTF-8">
  
 <script>
+    function saltarLinea() {
+        
+        document.write("<br>");
+        document.write("<br>");
+    }
     document.write("la edad de cristian es...")
     document.write("<br>")
     document.write(25+8)
@@ -50,6 +55,34 @@
     document.write("Agustina tiene: "+ (anho-2007) + " años");
     document.write("<br>");
     document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    anho=2022
+    var saltoLinea="<br><br><br>";
+    document.write("Jimena tiene: "+ (anho-2010) + " años");
+    saltarLinea;
+
+
+    document.write("Paola tiene: "+ (anho-1995) + " años");
+    saltarLinea();
+
+    document.write("Laura tiene: "+ (anho-2005) + " años");
+    saltarLinea();
+
+    var edadJimena=12;
+    var edadPaola=27;
+    var edadLaura=17;
+
+    var name1="Jimena";
+    var name2="Paola";
+    var name3="Laura";
+
+    var promedio=(edadJimena+edadLaura+edadPaola)/3;
+
+    document.write("El promedio de edades de: " + name1 + ", " + name2 + " y " + name3 + " es: "+ Math.round(promedio));
+
+
     
     
 
