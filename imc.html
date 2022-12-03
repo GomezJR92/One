@@ -11,18 +11,30 @@
         document.write(frase);
         saltarLinea();
     }
-    function calcularImc(peso,altura,nombre){
-        imc = peso/(altura*altura);
-        imprimir("EL IMC calculado de " +nombre+ " es: "+ imc);
+    function calcularImc(peso1,altura1,nombre1,peso2,altura2,nombre2){
+        imc1 = peso1/(altura1*altura1);
+        imc2 = peso2/(altura2*altura2);
+        imprimir("EL Promedio de IMC de " +nombre1+ " y "+nombre2+ " es: "+ (imc1+imc2)/2);
 
 
     }
-   calcularImc(90,1.79,"abel");
+    function calcularImcReturn(peso,altura){
+     
+        return(peso/(altura*altura));
+    }
+
+   calcularImc(90,1.79,"Abel",50,1.47,"Agustina");
+   calcularImc(80,1.82,"Roberto",70,1.70,"Laura");
+
+    
+
+    imprimir("EL Promedio de IMC de Laura y Lorena  es: "+ (calcularImcReturn(90,1.85)+calcularImcReturn(65,1.68))/2);
+    imprimir("EL Promedio de IMC de Rodolfo y Juan  es: "+ (calcularImcReturn(90,1.60)+calcularImcReturn(90,1.68))/2);
+
+
  
    
-   calcularImc(50,1.47,"Agustina");
    
-   
-   calcularImc(80,1.65,"Tia");
+
  
 </script>
