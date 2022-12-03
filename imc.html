@@ -23,13 +23,24 @@
         return(peso/(altura*altura));
     }
 
-   calcularImc(90,1.79,"Abel",50,1.47,"Agustina");
-   calcularImc(80,1.82,"Roberto",70,1.70,"Laura");
+    calcularImc(90,1.79,"Abel",50,1.47,"Agustina");
+    calcularImc(80,1.82,"Roberto",70,1.70,"Laura");
 
     
 
     imprimir("EL Promedio de IMC de Laura y Lorena  es: "+ (calcularImcReturn(90,1.85)+calcularImcReturn(65,1.68))/2);
     imprimir("EL Promedio de IMC de Rodolfo y Juan  es: "+ (calcularImcReturn(90,1.60)+calcularImcReturn(90,1.68))/2);
+    imprimir("<hr>")
+
+    nombre=prompt("informe su nombre");
+    pesoInformado=prompt(nombre+ " informe su peso");
+    alturaInformada=prompt(nombre+" informe su altura");
+    imcCalculado=calcularImcReturn(pesoInformado,alturaInformada);
+
+    imprimir(nombre+ ", su IMC calculado es: "+imcCalculado);
+
+
+
 
 
  
