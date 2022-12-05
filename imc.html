@@ -30,7 +30,7 @@
 
     imprimir("EL Promedio de IMC de Laura y Lorena  es: "+ (calcularImcReturn(90,1.85)+calcularImcReturn(65,1.68))/2);
     imprimir("EL Promedio de IMC de Rodolfo y Juan  es: "+ (calcularImcReturn(90,1.60)+calcularImcReturn(90,1.68))/2);
-    imprimir("<hr>")
+    imprimir("<hr>");
 
     nombre=prompt("informe su nombre");
     pesoInformado=prompt(nombre+ " informe su peso");
@@ -38,6 +38,21 @@
     imcCalculado=calcularImcReturn(pesoInformado,alturaInformada);
 
     imprimir(nombre+ ", su IMC calculado es: "+imcCalculado);
+
+    if (imcCalculado < 18.5){
+        imprimir("Debajo del IMC recomendado.");
+    }
+    
+    if (imcCalculado >= 18.5 && imcCalculado < 25){
+        imprimir("Estado normal del IMC recomendado.");
+    }
+    
+    if (imcCalculado >= 25 && imcCalculado < 30){
+        imprimir("Excedido del IMC recomendado. Sobre peso");
+    }
+    if (imcCalculado >= 30){
+        imprimir(" Muy excedido del IMC recomendado. Obesidad");
+    }
 
 
 
