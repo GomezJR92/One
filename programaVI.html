@@ -22,12 +22,22 @@
 
         pincel.clearRect(0,0,600,400);
     }
+    var x = 0;
+    function actualizarPantalla(){
 
-    for(var x=20; x<600; x++){
-
-    
-        disenharCircunferencia(x,20,10);   
+        limpiarPantalla();
+        disenharCircunferencia(x,20,10);
+        x++;
+        
 
     }
+
+    setInterval(actualizarPantalla,100);
+   
+
+    
+   
+
+    
    
 </script>
