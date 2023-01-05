@@ -202,6 +202,7 @@ td, th{
     font-size: 2em;
     margin: 0 0 1em ;
     clear: left;
+    
 }
 
 .bloquePrincipal p{
@@ -248,7 +249,7 @@ td, th{
 
     background: #888888;
     padding: 3em 0;
-    
+      
 }
 
 .contenido-diferenciales{
@@ -283,7 +284,14 @@ td, th{
 .imagen-diferenciales{
 
     width: 60%;
+    box-shadow: 10px 10px 30px 15px #000000;
+   
+}
 
+.imagen-diferenciales:hover{
+
+    opacity: 30%;
+    transition: 400ms;
 }
 
 .video{
